@@ -1,13 +1,19 @@
-/* Creamos el componente en un archivo aparte (normalmente esto
-es lo que se hace cuando creamos componentes) y lo exportamos al main
-que es el archivo que normalmente se linkea al index.html para
-que pueda ser impreso en el navegador
-*/
+//<React.Fragment></React.Fragment> es lo mismo que poner solamente <></>
+
+import { TwitterFollowCard } from "./TwitterFollowCard.jsx";
 
 export function App () {
-    return(
-        <div>
-            <h1>Twitter Card</h1>
-        </div>
+    return (
+        <section className="App">
+        <TwitterFollowCard userName="LIRIK" name="Lirik">
+            Lirik 
+        </TwitterFollowCard>
+        <TwitterFollowCard userName="xqc" name="xQc">
+            xQc
+        </TwitterFollowCard>
+        <TwitterFollowCard userName="pokelawls" name="pokelawls">
+            pokelawls
+        </TwitterFollowCard>
+        </section>
     )
 }
